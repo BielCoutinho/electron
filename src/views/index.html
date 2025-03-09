@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Evitar ataques de Cross Site Scipting (injeção de dados)-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' ">
+    <title>Electron</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <!--CSS customizado-->
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Electron tutorial </h1>
+        <h2> Janela modal</h2>
+
+    <button onclick="openChild()" id="btnModal"></button>
+    <h2 class="mt-3">Dialog</h2>
+    <button class="btn btn-info"  onclick="info()">Informações</button>
+    <button  class="btn btn-warning" onclick="warning()">Aviso</button>
+    <button class="btn btn-secondary" onclick="select()">Selecionar</button>
+    </div>
+    
+
+    <footer>
+        <p id="dataAtual"></p>
+    </footer>
+
+
+    <!--Processo de Redenrização-->
+    <script src="rederer.js"></script>
+    <!--Bootstrap-->
+    <script src="../public/js/bootstrap.min.js"></script>
+</body>
+</html>
